@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
+import tailwindcss from '@tailwindcss/vite'; // <== Tambahkan baris ini
 
 export default defineConfig({
     plugins: [
@@ -10,5 +11,6 @@ export default defineConfig({
             ],
             refresh: true,
         }),
+        tailwindcss(), // <== Tambahkan plugin Tailwind di sini
     ],
 });
